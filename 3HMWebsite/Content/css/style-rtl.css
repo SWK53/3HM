@@ -10,11 +10,12 @@
 	-- RTL CSS --
 
 -----------------------------------------------------------------------------------*/
-
-
+@import 'https://fonts.googleapis.com/css?family=Cairo';
 
 html,
-body { direction: rtl; }
+body { direction: rtl; 
+font-family: 'Cairo', sans-serif;
+}
 
 .bgicon {
 	left: -50px;
@@ -184,6 +185,7 @@ body { direction: rtl; }
 	float: right;
 	margin-right: 20px;
 	margin-left: 0;
+    font-family: 'Katibeh', cursive;
 }
 
 .header-extras li:first-child { margin-right: 0; }
@@ -229,6 +231,12 @@ body { direction: rtl; }
 #primary-menu ul li > a i {
 	margin-left: 6px;
 	margin-right: 0;
+}
+
+#primary-menu ul li > a {
+    font-family: 'Cairo', sans-serif;
+    font-weight:500;
+    font-size:18px;
 }
 
 #primary-menu ul li > a i.icon-angle-down:last-child { margin: 0 5px 0 0; }

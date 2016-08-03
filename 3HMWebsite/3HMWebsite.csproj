@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -185,6 +186,8 @@
     <Content Include="Content\css\style-rtl.css" />
     <Content Include="Content\css\swiper.css" />
     <Content Include="Content\css\vmap.css" />
+    <Content Include="Content\images\3HMLogo_Default.png" />
+    <Content Include="Content\images\3HMLogo_white.png" />
     <Content Include="Content\images\about\1.jpg" />
     <Content Include="Content\images\about\2.jpg" />
     <Content Include="Content\images\about\3.jpg" />
@@ -366,6 +369,7 @@
     <Content Include="Content\images\icons\widget-link-dark%402x.png" />
     <Content Include="Content\images\icons\widget-link-dark.png" />
     <Content Include="Content\images\icons\widget-link.png" />
+    <Content Include="Content\images\Info_Header.png" />
     <Content Include="Content\images\intro\bg.jpg" />
     <Content Include="Content\images\intro\multipage\homepage1.jpg" />
     <Content Include="Content\images\intro\multipage\homepage10.jpg" />
@@ -1009,6 +1013,8 @@
     <Content Include="Content\images\testimonials\8.jpg" />
     <Content Include="Content\images\testimonials\parallax.jpg" />
     <Content Include="Content\images\testimonials\parallax2.jpg" />
+    <Content Include="Content\images\videos\3HMCover.jpg" />
+    <Content Include="Content\images\videos\3HMCover.m4v" />
     <Content Include="Content\images\videos\explore-thumb.jpg" />
     <Content Include="Content\images\videos\explore.jpg" />
     <Content Include="Content\images\videos\explore.mp4" />
@@ -1769,6 +1775,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\images\videos\shutterstock_v6565346.webm" />
+    <Content Include="Content\images\videos\3HMCover.webm" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1777,6 +1784,16 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\Res.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Res.ar.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Res.ar.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -1803,6 +1820,18 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Res.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Res.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Res.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Res.ar.designer.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
